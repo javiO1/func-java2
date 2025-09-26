@@ -1,0 +1,15 @@
+{
+  "scriptFile" : "../func-java2-1.0-SNAPSHOT.jar",
+  "entryPoint" : "com.example.function.HelloFunction.run",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "direction" : "in",
+    "name" : "req",
+    "methods" : [ "GET", "POST" ],
+    "authLevel" : "ANONYMOUS"
+  }, {
+    "type" : "http",
+    "direction" : "out",
+    "name" : "$return"
+  } ]
+}
